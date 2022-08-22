@@ -53,7 +53,7 @@ class libanilist(lib):
         'statuses_start': ['CURRENT', 'REPEATING'],
         'statuses_finish': ['COMPLETED'],
         'statuses_library': ['CURRENT', 'REPEATING', 'PAUSED', 'PLANNING'],
-        'statuses':  ['CURRENT', 'COMPLETED', 'REPEATING', 'PAUSED', 'DROPPED', 'PLANNING'],
+        'statuses':  ['CURRENT', 'REPEATING', 'PLANNING', 'COMPLETED', 'PAUSED', 'DROPPED'],
         'statuses_dict': {
             'CURRENT': 'Watching',
             'REPEATING': 'Rewatching',
