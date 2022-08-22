@@ -56,12 +56,12 @@ class libanilist(lib):
         'statuses':  ['CURRENT', 'COMPLETED', 'REPEATING', 'PAUSED', 'DROPPED', 'PLANNING'],
         'statuses_dict': {
             'CURRENT': 'Watching',
-            'COMPLETED': 'Completed',
             'REPEATING': 'Rewatching',
+            'PLANNING': 'Plan to Watch',
+            'COMPLETED': 'Completed',
             'PAUSED': 'Paused',
-            'DROPPED': 'Dropped',
-            'PLANNING': 'Plan to Watch'
-        },
+            'DROPPED': 'Dropped'
+         },
         'score_max': 100,
         'score_step': 1,
         'search_methods': [utils.SearchMethod.KW, utils.SearchMethod.SEASON],
