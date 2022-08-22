@@ -7,13 +7,14 @@
 """
 
 import shutil
+import string
 from trackma import utils
 
 
 # Executed when trying to watch an episode that doesn't exist in your library
 def episode_missing(engine, show, episode):
 
-    query = show["title"].strip()
+    query = (show["title"].strip()).translate(str.maketrans('', '', string.punctuation))
     anicli = shutil.which("ani-cli")  # find 'ani-cli' executable
     if anicli:
         args = [anicli, "-q", "best", "-a", str(episode), query]
